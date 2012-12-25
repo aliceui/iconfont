@@ -1,6 +1,3 @@
+# 演示文档
 
-````javascript
-seajs.use('iconfont', function(iconfont){
-
-});
-````
+---

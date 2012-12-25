@@ -2,8 +2,8 @@
     "name": "iconfont",
     "version": "1.0.0",
     "root": "alice",
-    "description": "",
-    "homepage": "",
+    "description": "支付宝的 iconfont 集合。",
+    "homepage": "http://site.alipay.im/rei/",
     "author": "",
     "repository": {
         "type": "git",
