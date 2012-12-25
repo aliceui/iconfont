@@ -1,0 +1,22 @@
+{
+    "name": "iconfont",
+    "version": "1.0.0",
+    "root": "alice",
+    "description": "",
+    "homepage": "",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "tests": ["iconfont"],
+    "output": {
+        "iconfont.js": "."
+    }
+}
