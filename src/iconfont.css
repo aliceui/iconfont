@@ -20,9 +20,12 @@
     color: #4d4d4d;
     cursor: default;
     -webkit-font-smoothing: antialiased;
-    margin-right:4px;
 }
 /* 预设左右位置 */
+.iconfont-right {
+    margin-left:0;
+    margin-right:4px;
+}
 .iconfont-right {
     margin-right:0;
     margin-left:4px;
