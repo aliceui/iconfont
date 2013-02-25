@@ -1,0 +1,58 @@
+/* 
+ * @name: ui-iconfont
+ * @overview: REI——支付宝的iconfont
+ * @require: 无
+ */
+@font-face {
+    font-family: "rei";
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot"); /* IE9*/
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("https://i.alipayobjects.com/common/fonts/rei.woff") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+         url("https://i.alipayobjects.com/common/fonts/rei.ttf")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+         url("https://i.alipayobjects.com/common/fonts/rei.svg#rei") format("svg"); /*  iOS 4.1- */
+    font-weight: normal;
+    font-style: normal;
+}
+.iconfont {
+    font-family: "rei";
+    font-size: 12px;
+    font-style: normal;
+    color: #4d4d4d;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+/* 预设左右位置 */
+.iconfont-right {
+    margin-left:0;
+    margin-right:4px;
+}
+.iconfont-right {
+    margin-right:0;
+    margin-left:4px;
+}
+/* 预设字体大小 */
+.iconfont-14px {
+    font-size:14px;
+}
+.iconfont-16px {
+    font-size:16px;
+}
+.iconfont-18px {
+    font-size:18px;
+}
+/* 预设字体颜色 */
+.iconfont-black {
+    color:#000;
+}
+.iconfont-gray {
+    color:#999;
+}
+.iconfont-light-gray {
+    color:#ccc;
+}
+.iconfont-white {
+    color:#fff;
+}
+.iconfont-blue {
+    color:#0088cc;
+}

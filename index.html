@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>Iconfont - iconfont</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="nico 0.2.3" />
+    <link type="image/x-icon" href="./static/css/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="./static/css/normalize.css" />
+    <link rel="stylesheet" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/solarized.css" />
+    <script src="http://static.alipayobjects.com/seajs/1.3.1/sea.js"></script>
+    <script src="./static/js/arale-helper.js"></script>
+    <script src="./static/js/site.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36247332-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  (function() {
+    var data;
+    seajs._package = data = {"name":"iconfont","version":"1.0.0","root":"alice","description":"支付宝的 iconfont 集合。","homepage":"http://site.alipay.im/rei/","author":"","repository":{"type":"git","url":"http://github.com/aliceui/iconfont"},"bugs":{"url":"http://github.com/aliceui/iconfont/issues"},"license":"MIT","dependencies":{},"tests":["iconfont"],"output":{"iconfont.css":"."}}
+    data.dependencies && (delete data.dependencies['$'])
+    data.devDependencies && (delete data.devDependencies['$'])
+
+    seajs.config({ alias: data.dependencies })
+    seajs.config({ alias: data.devDependencies })
+    seajs.config({ alias: {} })
+
+    // for alice
+    for(var dep in data.dependencies) {
+        seajs.use(dep);
+    }
+  })();
+</script>
+    <!--[if lt IE 9]>
+    <script src="./static/js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div id="body-wrapper">
+      <aside id="sidebar-wrapper">
+        <h1><a href="./">Iconfont</a><sup class="package-root"><a href="/">alice</a></sup></h1>
+        <p class="version">当前版本：<a href="http://aralejs.org/docs/online-status.html#alice-iconfont" title="点击查看此组件发布情况">1.0.0</a></p>
+        <p class="description">支付宝的 iconfont 集合。</p>
+        <a class="source" href="http://github.com/aliceui/iconfont" target="_blank">View the Project</a>
+      </aside>
+      <div id="content-wrapper">
+        <div id="content">
+<article class="hentry">
+  <h1 class="entry-title">iconfont</h1>
+  <div class="entry-content">
+    <p>支付宝的 iconfont 集，把图标放入自定义字体中，然后使用字体图标来替代普通图标。</p>
+
+<p>注意，不要依赖这个模块，在支付宝全站的头部将会部署这段样式。所有的 alice 模块也都可以默认使用 iconfont。</p>
+
+<hr/>
+<h2 id="%E6%BC%94%E7%A4%BA">演示</h2>
+<p>先请看这个 <a href="http://site.alipay.im/rei/">http://site.alipay.im/rei/</a> (内网可访问)。</p>
+<h2 id="%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8rei">为什么要使用Rei</h2>
+<ol>
+<li>摆脱抠图：字体中已有的图标，前端同学就再也不用抠图了！</li>
+<li>高兼容性：字体图标是矢量的，随意大小，可以用在不同分辨率的移动端上，并且在视网膜屏下不会模糊。</li>
+<li>规范化：形成支付宝图标规范，视觉同学再也不用重复设计图标了，同时给用户一个统一的图标认知。</li>
+<li>性能优化：减少请求数，字体大小只有20多KB，缓存后，其他页面用到的图标就不会重新请求，全站有效。</li>
+<li>易于控制；因为是字体格式，所以可以通过css控制图标的大小、颜色、投影、描边等效果，也可以通过两个图标叠加方式的方式实现更多丰富的效果（如支付宝logo）。</li>
+</ol>
+<h3 id="rei%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7">Rei的局限性</h3>
+<ol>
+<li>Rei并不想完全取代传统图标，也不是全能的，Rei只会收录一些通用的图标，尽量保持精简。</li>
+<li>虽然能用css做一些阴影渐描边变等，但不能支持彩色，如生活应用的那些彩色图标Rei就无能为力了。</li>
+<li>随着图标收录得越来越多，字体文件会相应变大。必须要做combo或拆分。</li>
+</ol>
+<h3 id="rei%E7%9A%84%E5%8E%9F%E7%90%86">Rei的原理</h3>
+<p>Rei其实就是自定义字体，在这个字体的坑位里，不是字或符号而是我们放进去的图标。然后使用css3的@font-face来使用这个自定义字体。</p>
+
+<p>‘@font-face’规则首先定义在CSS2规范中，但是在CSS2.1中被删除，目前又被纳入到CSS3推荐草案中，所以不用担心IE系列，从IE4开始就支持这一属性了，并且现在一些主流的浏览器（Chrome 1+/Firefox 3.5+/Safari 3.1+/iOS 3.1+/Opera 10+）也都支持。</p>
+<h3 id="%E6%B2%A1%E6%9C%89%E6%88%91%E8%A6%81%E6%89%BE%E7%9A%84%E5%9B%BE%E6%A0%87">没有我要找的图标</h3>
+<p>请联系 @定风波 。</p>
+
+  </div>
+</article>
+</div>
+      </div>
+      
+    </div>
+    <div id="footer-wrapper">
+      <footer>
+        <p class="powered">
+        <a href="http://aralejs.org">Arale</a> •
+        <a href="http://aliceui.org">Alice</a> •
+        <a href="https://github.com/spmjs/spm">spm</a> •
+        <a href="http://lab.lepture.com/nico/">nico</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
