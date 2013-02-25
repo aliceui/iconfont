@@ -17,6 +17,6 @@
     },
     "tests": ["iconfont"],
     "output": {
-        "iconfont.js": "."
+        "iconfont.css": "."
     }
 }
