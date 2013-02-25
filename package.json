@@ -7,10 +7,10 @@
     "author": "",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "http://github.com/aliceui/iconfont"
     },
     "bugs": {
-        "url": ""
+        "url": "http://github.com/aliceui/iconfont/issues"
     },
     "license": "MIT",
     "dependencies": {
