@@ -15,44 +15,8 @@
 }
 .iconfont {
     font-family: "rei";
-    font-size: 12px;
     font-style: normal;
     color: #4d4d4d;
     cursor: default;
     -webkit-font-smoothing: antialiased;
-}
-/* 预设左右位置 */
-.iconfont-right {
-    margin-left:0;
-    margin-right:4px;
-}
-.iconfont-right {
-    margin-right:0;
-    margin-left:4px;
-}
-/* 预设字体大小 */
-.iconfont-14px {
-    font-size:14px;
-}
-.iconfont-16px {
-    font-size:16px;
-}
-.iconfont-18px {
-    font-size:18px;
-}
-/* 预设字体颜色 */
-.iconfont-black {
-    color:#000;
-}
-.iconfont-gray {
-    color:#999;
-}
-.iconfont-light-gray {
-    color:#ccc;
-}
-.iconfont-white {
-    color:#fff;
-}
-.iconfont-blue {
-    color:#0088cc;
 }
