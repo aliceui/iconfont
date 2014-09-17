@@ -1,7 +1,6 @@
 {
-    "name": "iconfont",
-    "version": "1.0.0",
-    "family": "alice",
+    "name": "alice-iconfont",
+    "version": "1.1.0",
     "description": "一套简单实用的 iconfont 集合。",
     "homepage": "http://site.alipay.im/rei/",
     "author": "",
@@ -14,8 +13,7 @@
     },
     "license": "MIT",
     "spm": {
-        "alias": {
-        },
-        "output": ["iconfont.css"]
+        "main": "index.css",
+        "ignore": ["rei.zip"]
     }
 }
